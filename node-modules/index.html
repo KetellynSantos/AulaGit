@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 2</title>
+</head>
+<body>
+    <h1>Teste de Divisibilidade.</h1>
+    Digite um numero:
+    <input type="number" id="iptNum"><br><br>
+
+    <button onclick="analisar()">Ver Divisores</button>
+    <div id="msg"></div>
+</body>
+<script>
+    function analisar() {
+        var axNum = Number(iptNum.value)
+        var contador = 1
+
+        /*
+        contador = contador + 1
+        contador += 1
+        contador++
+
+        contador *= 1
+
+Teste de explicação.
+
+        */
+
+        msg.innerHTML = ''
+
+        while(contador <= axNum) {
+            if(axNum % contador == 0) {
+                msg.innerHTML += `<br> ${contador}`
+            }
+            contador++
+        }
+    }
+</script>
+</html>

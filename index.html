@@ -8,25 +8,31 @@
 </head>
 <body>
     <!--    anotação
-        git init permite que a gente crie uma pastinha  q inicia o nosso repositorio.
-        u significa q foi reconhecido, mas nao registrado.
+        git init permite que a gente crie uma pastinha q inicia o nosso repositório.
+
+        U na frente do arquivo significa q foi reconhecido e não registrado.
+
         git status mostra como esta nossas coisas
-        git add ele adiciona e rastreia as alterações que estao sendo feitas.
+        
+        git add (nome do arquivo) ele adiciona e rastreia as alterações que estao sendo feitas.
 
-        flags -> passam informaçoes ao comando que está sendo executado. São precedidas por um ou dois hifens
+        flags -> passam informações ao comando que está sendo executado. São precedidas por um ou dois hifens (git log)
 
-       git checkout  acb68a3989bcc93fa5be60292fef4a1f3d9856d8 / cod da lkinha do tempo
+       git checkout  acb68a3989bcc93fa5be60292fef4a1f3d9856d8 / cod da linha do tempo
+
        ele volta para as conf daquela linha, apagando a atual. qnd der o git log aprarece os commits daque linha. no git log --all mostra todos
-       git checkout master volta com tudo da linha.
+
+       git checkout master/main volta com tudo da linha.
 
        git resert --hard -> apaga tudo que fizemos, mas precisamos direcionar, ficando
-       git resert --hard HEAD^ ele apga o ultimo
 
-       git reset --soft HEAD^ -> so 'perde' o commit anterior, assim podemos dar o commit certo, caso tenhamos errado.
+       git resert --hard HEAD^ ele apaga o último
 
-       git reset HEAD^ tira da esteide.
+       git reset --soft HEAD^ -> so 'perde' o commit anterior, assim podemos dar o commit certo, caso tenhamos errado. Refaço com git commit -m ''
 
-       a steid é o que fazemos, a atualiçaõ dele 
+       git reset HEAD^ tira da staging.
+
+       a staging é o que fazemos, a atualição dele.
 
        fazer git add qnd terminarmos tudo.
 
@@ -45,6 +51,10 @@
        para colocar as alteraçoes qnd por aceito o projeto, usamos os comando:
        git checkout main (branch principal / verificar se é main ou master)
        git merge nomeDaBranch
+
+       fork de um clone ele cria um clone do repositorio todo, mesmo dando o clone nel no forw, precisamos criar uma nova branch. 
+       Caso a equipe do repositorio quiser a sujestao e de um merge.
+       
     -->
 
     <h1>Titulo principal</h1>
